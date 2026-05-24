@@ -68,10 +68,10 @@
         document.getElementById('icon').style.display = "none";
         document.getElementById('msg').innerText = "填入錯誤: " + err.message;
       }
-    }).catch(err => {
-      document.getElementById('icon').style.display = "none";
-      document.getElementById('msg').innerText = "環境初始化失敗: " + err.message;
-    });
+   }).catch(err => {
+  document.getElementById('icon').style.display = "none";
+  document.getElementById('msg').innerText = "環境初始化失敗: " + JSON.stringify(err) + " | 錯誤訊息: " + err.message;
+});
   </script>
 </body>
 </html>
